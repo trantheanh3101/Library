@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function check2(arr) {
+            arr.sort(function(a, b) {
+                return b - a;
+            });
+            return arr[0];
+        }
+
+
+        let array = [];
+        let n = prompt("nhập số item trong mảng")
+        for (let i = 0; i < n; i++) {
+            let num = +prompt("nhập number " + (i+1));
+            array.push(num);
+        }
+        document.write(check2(array) + "<br>");
+
+
+    </script>
+</body>
+</html>

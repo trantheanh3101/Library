@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var str = "Hello World";
+
+        // 1. charAt(index)
+        console.log("1. charAt(index):", str.charAt(0)); // Output: "H"
+
+        // 2. charCodeAt(index)
+        console.log("2. charCodeAt(index):", str.charCodeAt(0)); // Output: 72 (Unicode for "H")
+
+        // 3. concat(string1, string2, ...)
+        console.log("3. concat(string1, string2, ...):", str.concat(" ", "Universe")); // Output: "Hello World Universe"
+
+        // 4. includes(searchString, position)
+        console.log("4. includes(searchString, position):", str.includes("World")); // Output: true
+
+        // 5. indexOf(searchValue, fromIndex)
+        console.log("5. indexOf(searchValue, fromIndex):", str.indexOf("World")); // Output: 6
+
+        // 6. lastIndexOf(searchValue, fromIndex)
+        console.log("6. lastIndexOf(searchValue, fromIndex):", str.lastIndexOf("o")); // Output: 7
+
+        // 7. match(regexp)
+        console.log("7. match(regexp):", str.match(/o/g)); // Output: ["o", "o"]
+
+        // 8. replace(regexp|substr, newSubStr|function)
+        console.log("8. replace(regexp|substr, newSubStr|function):", str.replace("World", "Universe")); // Output: "Hello Universe"
+
+        // 9. search(regexp)
+        console.log("9. search(regexp):", str.search(/W/)); // Output: 6
+
+        // 10. slice(startIndex, endIndex)
+        console.log("10. slice(startIndex, endIndex):", str.slice(6, 11)); // Output: "World"
+
+        // 11. split(separator, limit)
+        console.log("11. split(separator, limit):", str.split(" ")); // Output: ["Hello", "World"]
+
+        // 12. substr(startIndex, length)
+        console.log("12. substr(startIndex, length):", str.substr(6, 5)); // Output: "World"
+
+        // 13. substring(startIndex, endIndex)
+        console.log("13. substring(startIndex, endIndex):", str.substring(6, 11)); // Output: "World"
+
+        // 14. toLowerCase()
+        console.log("14. toLowerCase():", str.toLowerCase()); // Output: "hello world"
+
+        // 15. toUpperCase()
+        console.log("15. toUpperCase():", str.toUpperCase()); // Output: "HELLO WORLD"
+
+        // 16. trim()
+        console.log("16. trim():", "   Hello World   ".trim()); // Output: "Hello World"
+
+        // 17. valueOf()
+        console.log("17. valueOf():", str.valueOf()); // Output: "Hello World"
+
+        // 18. toString()
+        console.log("18. toString():", str.toString()); // Output: "Hello World"
+
+        // 19. localeCompare(compareString)
+        console.log("19. localeCompare(compareString):", str.localeCompare("World")); // Output: -1 (different)
+
+        // 20. padEnd(targetLength, padString)
+        console.log("20. padEnd(targetLength, padString):", str.padEnd(15, '.')); // Output: "Hello World...."
+
+        // 21. padStart(targetLength, padString)
+        console.log("21. padStart(targetLength, padString):", str.padStart(15, '.')); // Output: "....Hello World"
+
+        // 22. repeat(count)
+        console.log("22. repeat(count):", str.repeat(2)); // Output: "Hello WorldHello World"
+
+        // 23. startsWith(searchString, position)
+        console.log("23. startsWith(searchString, position):", str.startsWith("Hello")); // Output: true
+
+        // 24. endsWith(searchString, length)
+        console.log("24. endsWith(searchString, length):", str.endsWith("World")); // Output: true
+
+        // 25. toLocaleLowerCase()
+        console.log("25. toLocaleLowerCase():", str.toLocaleLowerCase()); // Output: "hello world"
+
+        // 26. toLocaleUpperCase()
+        console.log("26. toLocaleUpperCase():", str.toLocaleUpperCase()); // Output: "HELLO WORLD"
+
+        // 27. trimEnd() hoặc trimRight()
+        console.log("27. trimEnd():", "   Hello World   ".trimEnd()); // Output: "   Hello World"
+
+        // 28. trimStart() hoặc trimLeft()
+        console.log("28. trimStart():", "   Hello World   ".trimStart()); // Output: "Hello World   "
+
+        // 29. trimEnd() hoặc trimRight()
+        console.log("29. trimEnd():", "   Hello World   ".trimEnd()); // Output: "   Hello World"
+
+        // 30. trimStart() hoặc trimLeft()
+        console.log("30. trimStart():", "   Hello World   ".trimStart()); // Output: "Hello World   "
+
+        // 31. String.fromCharCode(num1, num2, ...)
+        console.log("31. String.fromCharCode(num1, num2, ...):", String.fromCharCode(72, 101, 108, 108, 111)); // Output: "Hello"
+
+        // 32. String.fromCodePoint(num1, num2, ...)
+        console.log("32. String.fromCodePoint(num1, num2, ...):", String.fromCodePoint(72, 101, 108, 108, 111)); // Output: "Hello"
+
+        // 33. String.prototype.charAt()
+        console.log("33. String.prototype.charAt():", str.charAt(0)); // Output: "H"
+
+        // 34. String.prototype.charCodeAt()
+        console.log("34. String.prototype.charCodeAt():", str.charCodeAt(0)); // Output: 72 (Unicode for "H")
+
+        // 35. String.prototype.codePointAt()
+        console.log("35. String.prototype.codePointAt():", str.codePointAt(0)); // Output: 72 (Unicode for "H")
+
+        // 36. String.prototype.concat()
+        console.log("36. String.prototype.concat():", str.concat(" ", "Universe")); // Output: "Hello World Universe"
+
+        // 37. String.prototype.endsWith()
+        console.log("37. String.prototype.endsWith():", str.endsWith("World")); // Output: true
+
+        // 38. String.prototype.includes()
+        console.log("38. String.prototype.includes():", str.includes("World")); // Output: true
+
+        // 39. String.prototype.indexOf()
+        console.log("39. String.prototype.indexOf():", str.indexOf("World")); // Output: 6
+
+        // 40. String.prototype.lastIndexOf()
+        console.log("40. String.prototype.lastIndexOf():", str.lastIndexOf("o")); // Output: 7
+
+        // 41. String.prototype.localeCompare()
+        console.log("41. String.prototype.localeCompare():", str.localeCompare("World")); // Output: -1 (different)
+
+        // 42. String.prototype.match()
+        console.log("42. String.prototype.match():", str.match(/o/g)); // Output: ["o", "o"]
+
+        // 43. String.prototype.matchAll()
+        console.log("43. String.prototype.matchAll():", [...str.matchAll(/o/g)]); // Output: [Array(2), Array(2)]
+
+        // 44. String.prototype.normalize()
+        console.log("44. String.prototype.normalize():", "\u1E9B\u0323".normalize()); // Output: "ṩ"
+
+        // 45. String.prototype.padEnd()
+        console.log("45. String.prototype.padEnd():", str.padEnd(15, '.')); // Output: "Hello World...."
+
+        // 46. String.prototype.padStart()
+        console.log("46. String.prototype.padStart():", str.padStart(15, '.')); // Output: "....Hello World"
+
+        // 47. String.prototype.repeat()
+        console.log("47. String.prototype.repeat():", str.repeat(2)); // Output: "Hello WorldHello World"
+
+        // 48. String.prototype.replace()
+        console.log("48. String.prototype.replace():", str.replace("World", "Universe")); // Output: "Hello Universe"
+
+        // 49. String.prototype.search()
+        console.log("49. String.prototype.search():", str.search(/W/)); // Output: 6
+
+        // 50. String.prototype.slice()
+        console.log("50. String.prototype.slice():", str.slice(6, 11)); // Output: "World"
+
+    </script>
+</body>
+</html>

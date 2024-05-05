@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // 1. concat()
+        var array1 = [1, 2, 3];
+        var array2 = [4, 5, 6];
+        var newArray = array1.concat(array2);
+        console.log("1. concat():", newArray); // concat(): [ 1, 2, 3, 4, 5, 6 ]
+
+        // 2. copyWithin()
+        var array = [1, 2, 3, 4, 5];
+        array.copyWithin(0, 3, 5);
+        console.log("2. copyWithin():", array); // copyWithin(): [ 4, 5, 3, 4, 5 ]
+
+        // 3. entries()
+        var fruits = ["apple", "banana", "cherry"];
+        var iterator = fruits.entries();
+        console.log("3. entries():", [...iterator]); // entries(): [ [ 0, 'apple' ], [ 1, 'banana' ], [ 2, 'cherry' ] ]
+
+        // 4. every()
+        var ages = [32, 33, 16, 40];
+        function checkAdult(age) {
+            return age >= 18;
+        }
+        console.log("4. every():", ages.every(checkAdult)); // every(): false
+
+        // 5. fill()
+        var array = [1, 2, 3, 4];
+        console.log("5. fill():", array.fill(0, 2, 4)); // fill(): [ 1, 2, 0, 0 ]
+
+        // 6. filter()
+        var numbers = [1, 2, 3, 4, 5, 6];
+        var evenNumbers = numbers.filter(function(num) {
+            return num % 2 === 0;
+        });
+        console.log("6. filter():", evenNumbers); // filter(): [ 2, 4, 6 ]
+
+        // 7. find()
+        var numbers = [4, 5, 8, 10];
+        var found = numbers.find(function(num) {
+            return num > 5;
+        });
+        console.log("7. find():", found); // find(): 8
+
+        // 8. findIndex()
+        var numbers = [4, 5, 8, 10];
+        var foundIndex = numbers.findIndex(function(num) {
+            return num > 5;
+        });
+        console.log("8. findIndex():", foundIndex); // findIndex(): 2
+
+        // 9. flat()
+        var arr1 = [0, 1, 2, [3, 4]];
+        console.log("9. flat():", arr1.flat()); // flat(): [ 0, 1, 2, 3, 4 ]
+
+        // 10. flatMap()
+        var arr = ["it's Sunny in", "", "California"];
+        console.log("10. flatMap():", arr.flatMap(x => x.split(" "))); // flatMap(): [ "it's", "Sunny", "in", "California" ]
+
+        // 11. forEach()
+        var array = ["a", "b", "c"];
+        array.forEach(function(element) {
+            console.log("11. forEach():", element);
+        });
+
+        // 12. from()
+        var arrayLike = { 0: "a", 1: "b", 2: "c", length: 3 };
+        var array = Array.from(arrayLike);
+        console.log("12. from():", array); // from(): [ 'a', 'b', 'c' ]
+
+        // 13. includes()
+        var array = [1, 2, 3];
+        console.log("13. includes():", array.includes(2)); // includes(): true
+
+        // 14. indexOf()
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log("14. indexOf():", fruits.indexOf("Apple")); // indexOf(): 2
+
+        // 15. isArray()
+        console.log("15. isArray():", Array.isArray([])); // isArray(): true
+
+        // 16. join()
+        var array = ["apple", "banana", "cherry"];
+        console.log("16. join():", array.join(", ")); // join(): apple, banana, cherry
+
+        // 17. keys()
+        var array = ["a", "b", "c"];
+        var iterator = array.keys();
+        for (let key of iterator) {
+            console.log("17. keys():", key);
+        }
+
+        // 18. lastIndexOf()
+        var array = [2, 5, 9, 2];
+        console.log("18. lastIndexOf():", array.lastIndexOf(2)); // lastIndexOf(): 3
+
+        // 19. map()
+        var numbers = [1, 4, 9];
+        var roots = numbers.map(function(num) {
+            return Math.sqrt(num);
+        });
+        console.log("19. map():", roots); // map(): [ 1, 2, 3 ]
+
+        // 20. pop()
+        var array = [1, 2, 3];
+        console.log("20. pop():", array.pop(), array); // pop(): 3 [ 1, 2 ]
+
+        // 21. push()
+        var array = [1, 2, 3];
+        console.log("21. push():", array.push(4, 5), array); // push(): 5 [ 1, 2, 3, 4, 5 ]
+
+        // 22. reduce()
+        var total = [0, 1, 2, 3].reduce(function(a, b) {
+            return a + b;
+        });
+        console.log("22. reduce():", total); // reduce(): 6
+
+        // 23. reduceRight()
+        var flattened = [[0, 1], [2, 3], [4, 5]].reduceRight(function(a, b) {
+            return a.concat(b);
+        }, []);
+        console.log("23. reduceRight():", flattened); // reduceRight(): [ 4, 5, 2, 3, 0, 1 ]
+
+        // 24. reverse()
+        var array = [1, 2, 3];
+        console.log("24. reverse():", array.reverse()); // reverse(): [ 3, 2, 1 ]
+
+        // 25. shift()
+        var array = [1, 2, 3];
+        console.log("25. shift():", array.shift(), array); // shift(): 1 [ 2, 3 ]
+
+        // 26. slice()
+        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        console.log("26. slice():", fruits.slice(1, 3)); // slice(): [ 'Orange', 'Lemon' ]
+
+        // 27. some()
+        var ages = [3, 10, 18, 20];
+        function checkAdult(age) {
+            return age >= 18;
+        }
+        console.log("27. some():", ages.some(checkAdult)); // some(): true
+
+        // 28. sort()
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log("28. sort():", fruits.sort()); // sort(): [ 'Apple', 'Banana', 'Mango', 'Orange' ]
+
+        // 29. splice()
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log("29. splice():", fruits.splice(2, 0, "Lemon", "Kiwi"), fruits); // splice(): [ 'Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango' ]
+
+        // 30. toLocaleString()
+        var number = 123456.789;
+        console.log("30. toLocaleString():", number.toLocaleString()); // toLocaleString(): 123,456.789
+
+        // 31. toString()
+        var array = [1, 2, "a", "1a"];
+        console.log("31. toString():", array.toString()); // toString(): 1,2,a,1a
+
+        // 32. unshift()
+        var array = [1, 2, 3];
+        console.log("32. unshift():", array.unshift(4, 5), array); // unshift(): 5 [ 4, 5, 1, 2, 3 ]
+
+        // 33. values()
+        var array = ["w", "x", "y", "z"];
+        var iterator = array.values();
+        for (let letter of iterator) {
+            console.log("33. values():", letter);
+        }
+
+        // 34. flat()
+        var arr1 = [0, 1, 2, [3, 4]];
+        console.log("34. flat():", arr1.flat()); // flat(): [ 0, 1, 2, 3, 4 ]
+
+        // 35. flatMap()
+        var arr = ["it's Sunny in", "", "California"];
+        console.log("35. flatMap():", arr.flatMap(x => x.split(" "))); // flatMap(): [ "it's", "Sunny", "in", "California" ]
+
+        // 36. fromEntries()
+        var entries = new Map([
+            ["name", "John"],
+            ["age", 30],
+            ["city", "New York"]
+        ]);
+        var obj = Object.fromEntries(entries);
+        console.log("36. fromEntries():", obj); // fromEntries(): { name: 'John', age: 30, city: 'New York' }
+
+
+    </script>
+</body>
+</html>

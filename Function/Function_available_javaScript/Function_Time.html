@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // Ví dụ 1: Tạo một đối tượng thời gian mới đại diện cho thời điểm hiện tại
+        let now = new Date();
+        console.log(now + "  // đáp án: 5/5/2024, 9:30:00 SA");
+
+        // Ví dụ 2: Lấy năm hiện tại của đối tượng thời gian
+        console.log(now.getFullYear() + "  // đáp án: 2024");
+
+        // Ví dụ 3: Lấy tháng hiện tại của đối tượng thời gian
+        console.log(now.getMonth() + "  // đáp án: 4");
+
+        // Ví dụ 4: Lấy ngày hiện tại của đối tượng thời gian
+        console.log(now.getDate() + "  // đáp án: 5");
+
+        // Ví dụ 5: Lấy thứ hiện tại của đối tượng thời gian
+        console.log(now.getDay() + "  // đáp án: 0");
+
+        // Ví dụ 6: Lấy giờ hiện tại của đối tượng thời gian
+        console.log(now.getHours() + "  // đáp án: 9");
+
+        // Ví dụ 7: Lấy phút hiện tại của đối tượng thời gian
+        console.log(now.getMinutes() + "  // đáp án: 30");
+
+        // Ví dụ 8: Lấy giây hiện tại của đối tượng thời gian
+        console.log(now.getSeconds() + "  // đáp án: 0");
+
+        // Ví dụ 9: Lấy số milliseconds kể từ thời điểm 00:00:00 UTC ngày 1/1/1970
+        console.log(now.getTime() + "  // đáp án: 1813641000000");
+
+        // Ví dụ 10: Đặt năm mới cho đối tượng thời gian
+        now.setFullYear(2025);
+        console.log(now + "  // đáp án: Mon May 05 2025 09:30:00 GMT+0700 (Indochina Time)");
+
+        // Ví dụ 11: Chuyển đổi đối tượng thời gian thành chuỗi ISO 8601
+        console.log(now.toISOString() + "  // đáp án: 2024-05-05T02:30:00.000Z");
+
+        // Ví dụ 12: So sánh hai đối tượng thời gian
+        let christmas = new Date("2024-12-25");
+        let newYear = new Date("2025-01-01");
+        if (christmas > newYear) {
+            console.log("Giáng sinh năm nay sau mùng 1 Tết." + "  // đáp án: Giáng sinh năm nay sau mùng 1 Tết.");
+        } else {
+            console.log("Giáng sinh năm nay trước mùng 1 Tết." + "  // đáp án: Giáng sinh năm nay trước mùng 1 Tết.");
+        }
+
+        // Ví dụ 13: Lấy chuỗi biểu diễn của đối tượng thời gian
+        console.log(now.toString() + "  // đáp án: Sun May 05 2024 09:30:00 GMT+0700 (Indochina Time)");
+
+        // Ví dụ 14: Lấy chuỗi biểu diễn của đối tượng thời gian theo cài đặt địa phương
+        console.log(now.toLocaleString() + "  // đáp án: 5/5/2024, 9:30:00 SA");
+
+        // Ví dụ 15: Lặp lại chuỗi một số lần
+        console.log("abc".repeat(3) + "  // đáp án: abcabcabc");
+
+        // Ví dụ 16: Kiểm tra xem chuỗi có bắt đầu bằng chuỗi tìm kiếm hay không
+        let str = "Hello, world!";
+        console.log(str.startsWith("Hello") + "  // đáp án: true");
+
+        // Ví dụ 17: Kiểm tra xem chuỗi có chứa chuỗi tìm kiếm hay không
+        console.log(str.includes("world") + "  // đáp án: true");
+
+        // Ví dụ 18: Loại bỏ các khoảng trắng ở đầu và cuối chuỗi
+        let str2 = "   Trim me   ";
+        console.log(str2.trim() + "  // đáp án: Trim me");
+
+    </script>
+</body>
+</html>

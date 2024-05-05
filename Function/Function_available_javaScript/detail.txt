@@ -1,0 +1,134 @@
+1. Hàm toán học:
+    Math.abs(x): Trả về giá trị tuyệt đối của số x.
+    Math.ceil(x): Trả về số nguyên lớn nhất mà không lớn hơn x.
+    Math.floor(x): Trả về số nguyên nhỏ nhất mà không nhỏ hơn x.
+    Math.round(x): Làm tròn số x đến số nguyên gần nhất.
+    Math.max(x1, x2, ...): Trả về giá trị lớn nhất trong danh sách các số.
+    Math.min(x1, x2, ...): Trả về giá trị nhỏ nhất trong danh sách các số.
+    Math.pow(x, y): Trả về x mũ y.
+    Math.sqrt(x): Trả về căn bậc hai của số x.
+    Math.random(): Trả về một số ngẫu nhiên trong khoảng từ 0 (bao gồm) đến 1 (không bao gồm).
+    Math.sin(x), Math.cos(x), Math.tan(x): Trả về sin, cos, và tan của số x (trong đơn vị radian).
+    Math.log(x): Trả về logarithm tự nhiên của số x.
+    Math.exp(x): Trả về e mũ x.
+    Math.cbrt(x): Trả về căn bậc ba của số x.
+    Math.trunc(x): Loại bỏ phần thập phân của số x, chỉ giữ lại phần nguyên.
+    Math.hypot(x1, x2, ...): Trả về căn bậc hai của tổng bình phương của các số được truyền vào.
+
+2. Hàm xử lý chuỗi:
+    charAt(index): Trả về ký tự ở vị trí chỉ định trong chuỗi.
+    charCodeAt(index): Trả về mã Unicode của ký tự ở vị trí chỉ định trong chuỗi.
+    concat(string1, string2, ...): Nối các chuỗi lại với nhau và trả về chuỗi mới.
+    includes(searchString, position): Kiểm tra xem chuỗi có chứa chuỗi con đã cho không.
+    indexOf(searchValue, fromIndex): Trả về vị trí đầu tiên của chuỗi con trong chuỗi.
+    lastIndexOf(searchValue, fromIndex): Trả về vị trí cuối cùng của chuỗi con trong chuỗi.
+    match(regexp): Tìm kiếm một chuỗi với một biểu thức chính quy, và trả về kết quả tìm thấy.
+    replace(regexp|substr, newSubStr|function): Thay thế chuỗi con hoặc mẫu tìm thấy với chuỗi mới.
+    search(regexp): Tìm kiếm một chuỗi với một biểu thức chính quy, và trả về vị trí của kết quả.
+    slice(startIndex, endIndex): Trích xuất một phần của chuỗi dựa trên chỉ số bắt đầu và kết thúc.
+    split(separator, limit): Tách chuỗi thành một mảng các chuỗi con, dựa trên một chuỗi phân cách.
+    substr(startIndex, length): Trích xuất một số ký tự từ một vị trí bắt đầu.
+    substring(startIndex, endIndex): Trích xuất một phần của chuỗi, bắt đầu từ startIndex đến endIndex (không bao gồm).
+    toLowerCase(): Chuyển đổi chuỗi thành chữ thường.
+    toUpperCase(): Chuyển đổi chuỗi thành chữ in hoa.
+    trim(): Loại bỏ các khoảng trắng ở đầu và cuối chuỗi.
+    valueOf(): Trả về giá trị nguyên thủy của chuỗi.
+    toString(): Trả về một chuỗi đại diện cho đối tượng.
+    localeCompare(compareString): So sánh hai chuỗi theo thứ tự từ điển, trả về một giá trị số nguyên.
+    padEnd(targetLength, padString): Thêm vào cuối chuỗi một chuỗi đệm để đảm bảo độ dài mong muốn.
+    padStart(targetLength, padString): Thêm vào đầu chuỗi một chuỗi đệm để đảm bảo độ dài mong muốn.
+    repeat(count): Lặp lại chuỗi một số lần cho trước.
+    startsWith(searchString, position): Kiểm tra xem chuỗi có bắt đầu bằng chuỗi đã cho không.
+    endsWith(searchString, length): Kiểm tra xem chuỗi có kết thúc bằng chuỗi đã cho không.
+    toLocaleLowerCase(): Chuyển đổi chuỗi thành chữ thường dựa trên ngôn ngữ hiện tại của máy tính.
+    toLocaleUpperCase(): Chuyển đổi chuỗi thành chữ in hoa dựa trên ngôn ngữ hiện tại của máy tính.
+    trimEnd() hoặc trimRight(): Loại bỏ các khoảng trắng ở cuối chuỗi.
+    trimStart() hoặc trimLeft(): Loại bỏ các khoảng trắng ở đầu chuỗi.
+    valueOf(): Trả về giá trị nguyên thủy của chuỗi.
+    toString(): Trả về một chuỗi đại diện cho đối tượng.
+    String.fromCharCode(num1, num2, ...): Tạo một chuỗi từ mã Unicode của các ký tự đã cho.
+    String.fromCodePoint(num1, num2, ...): Tạo một chuỗi từ mã điểm mã Unicode của các ký tự đã cho.
+    String.prototype.charAt(): Trả về ký tự ở vị trí chỉ định trong chuỗi.
+    String.prototype.charCodeAt(): Trả về mã Unicode của ký tự ở vị trí chỉ định trong chuỗi.
+    String.prototype.codePointAt(): Trả về mã điểm mã Unicode của ký tự ở vị trí chỉ định trong chuỗi.
+    String.prototype.concat(): Nối chuỗi hiện tại với một hoặc nhiều chuỗi khác và trả về một chuỗi mới.
+    String.prototype.endsWith(): Kiểm tra xem chuỗi có kết thúc bằng một chuỗi con đã cho không.
+    String.prototype.includes(): Kiểm tra xem chuỗi có chứa một chuỗi con đã cho không.
+    String.prototype.indexOf(): Trả về vị trí đầu tiên của một chuỗi con trong chuỗi.
+    String.prototype.lastIndexOf(): Trả về vị trí cuối cùng của một chuỗi con trong chuỗi.
+    String.prototype.localeCompare(): So sánh hai chuỗi theo thứ tự từ điển của một ngôn ngữ cụ thể.
+    String.prototype.match(): Tìm kiếm một chuỗi với một biểu thức chính quy và trả về các kết quả tìm thấy.
+    String.prototype.matchAll(): Trả về một đối tượng iterator chứa tất cả các kết quả của việc tìm kiếm một biểu thức chính quy trong chuỗi.
+    String.prototype.normalize(): Trả về một phiên bản chuẩn hóa Unicode của chuỗi.
+    String.prototype.padEnd(): Thêm vào cuối chuỗi một chuỗi đệm để đảm bảo độ dài mong muốn.
+    String.prototype.padStart(): Thêm vào đầu chuỗi một chuỗi đệm để đảm bảo độ dài mong muốn.
+    String.prototype.repeat(): Lặp lại chuỗi một số lần.
+    String.prototype.replace(): Thay thế chuỗi con hoặc mẫu tìm thấy với chuỗi mới.
+    String.prototype.search(): Tìm kiếm một chuỗi với một biểu thức chính quy và trả về vị trí của kết quả.
+    String.prototype.slice(): Trích xuất một phần của chuỗi dựa trên chỉ số bắt đầu và kết thúc.
+
+3. Hàm thao tác với mảng:
+    concat(): Nối hai hoặc nhiều mảng lại với nhau và trả về một mảng mới.
+    copyWithin(): Sao chép một phần của mảng và chèn nó vào cùng một mảng, giữ nguyên kích thước và trả về mảng đã sửa đổi.
+    entries(): Trả về một đối tượng iterator chứa cặp giá trị [index, value] cho mỗi phần tử trong mảng.
+    every(): Kiểm tra xem tất cả các phần tử trong mảng có thoả mãn một điều kiện được cung cấp hay không.
+    fill(): Thay thế tất cả các phần tử trong mảng bằng một giá trị tĩnh.
+    filter(): Tạo một mảng mới chứa tất cả các phần tử của mảng ban đầu mà thoả mãn một điều kiện được cung cấp.
+    find(): Trả về giá trị của phần tử đầu tiên trong mảng mà thoả mãn một hàm kiểm tra được cung cấp.
+    findIndex(): Trả về chỉ số của phần tử đầu tiên trong mảng mà thoả mãn một hàm kiểm tra được cung cấp.
+    flat(): Tạo một mảng mới có tất cả các phần tử đã được làm phẳng về một mức độ cho trước.
+    flatMap(): Tạo một mảng mới bằng cách áp dụng một hàm xử lý cho mỗi phần tử trong mảng, sau đó làm phẳng kết quả thành một mảng.
+    forEach(): Thực thi một hàm được cung cấp một lần cho mỗi phần tử trong mảng.
+    from(): Tạo một mảng từ một đối tượng có thể lặp lại hoặc có dạng giống mảng.
+    includes(): Kiểm tra xem một mảng có chứa một giá trị cụ thể hay không.
+    indexOf(): Trả về chỉ số đầu tiên của một giá trị cụ thể trong mảng, hoặc -1 nếu giá trị không được tìm thấy.
+    isArray(): Kiểm tra xem một đối tượng có phải là mảng hay không.
+    join(): Chuyển đổi tất cả các phần tử của mảng thành một chuỗi và nối chúng bằng một dấu phân cách được chỉ định.
+    keys(): Trả về một đối tượng iterator chứa chỉ mục của mỗi phần tử trong mảng.
+    lastIndexOf(): Trả về chỉ số cuối cùng của một giá trị cụ thể trong mảng, hoặc -1 nếu giá trị không được tìm thấy.
+    map(): Tạo một mảng mới bằng cách gọi một hàm xử lý cho mỗi phần tử trong mảng.
+    pop(): Loại bỏ phần tử cuối cùng khỏi mảng và trả về phần tử đó.
+    push(): Thêm một hoặc nhiều phần tử vào cuối mảng và trả về độ dài mới của mảng.
+    reduce(): Áp dụng một hàm xử lý lên các phần tử của mảng (từ trái sang phải) để giảm chúng thành một giá trị duy nhất.
+    reduceRight(): Áp dụng một hàm xử lý lên các phần tử của mảng (từ phải sang trái) để giảm chúng thành một giá trị duy nhất.
+    reverse(): Đảo ngược thứ tự các phần tử trong mảng.
+    shift(): Loại bỏ phần tử đầu tiên khỏi mảng và trả về phần tử đó.
+    slice(): Trích xuất một phần của mảng và trả về một mảng mới.
+    some(): Kiểm tra xem một số phần tử trong mảng có thoả mãn một điều kiện được cung cấp hay không.
+    sort(): Sắp xếp các phần tử trong mảng.
+    splice(): Thay đổi nội dung của mảng bằng cách xóa hoặc thay thế các phần tử có sẵn và/hoặc thêm phần tử mới.
+    toLocaleString(): Trả về một chuỗi biểu diễn mảng dựa trên ngôn ngữ và cấu hình địa phương hiện tại.
+    toString(): Trả về một chuỗi biểu diễn mảng.
+    unshift(): Thêm một hoặc nhiều phần tử vào đầu mảng và trả về độ dài mới của mảng.
+    values(): Trả về một đối tượng iterator chứa giá trị của mỗi phần tử trong mảng.
+    flat(): Làm phẳng một mảng theo độ sâu được chỉ định.
+    flatMap(): Tương tự như map(), sau đó làm phẳng kết quả theo độ sâu 1.
+    fromEntries(): Chuyển đổi một danh sách các cặp [key, value] thành một đối tượng.
+
+4. Hàm xử lý thời gian:
+    Date(): Tạo một đối tượng thời gian mới đại diện cho thời điểm hiện tại.
+    getFullYear(): Trả về năm của đối tượng thời gian.
+    getMonth(): Trả về tháng (từ 0 đến 11) của đối tượng thời gian.
+    getDate(): Trả về ngày trong tháng (từ 1 đến 31) của đối tượng thời gian.
+    getDay(): Trả về thứ trong tuần (từ 0 đến 6, 0 là Chủ nhật) của đối tượng thời gian.
+    getHours(): Trả về giờ (từ 0 đến 23) của đối tượng thời gian.
+    getMinutes(): Trả về phút (từ 0 đến 59) của đối tượng thời gian.
+    getSeconds(): Trả về giây (từ 0 đến 59) của đối tượng thời gian.
+    getTime(): Trả về số milliseconds kể từ thời điểm 00:00:00 UTC ngày 1/1/1970.
+    setFullYear(year): Đặt năm cho đối tượng thời gian.
+    setMonth(month): Đặt tháng cho đối tượng thời gian.
+    setDate(day): Đặt ngày trong tháng cho đối tượng thời gian.
+    setHours(hour): Đặt giờ cho đối tượng thời gian.
+    setMinutes(minute): Đặt phút cho đối tượng thời gian.
+    setSeconds(second): Đặt giây cho đối tượng thời gian.
+    toISOString(): Chuyển đổi đối tượng thời gian thành chuỗi ISO 8601.
+    toString(): Chuyển đổi đối tượng thời gian thành chuỗi.
+    toLocaleString(): Chuyển đổi đối tượng thời gian thành chuỗi, sử dụng ngôn ngữ và cài đặt địa phương của máy chủ.
+
+5. Hàm DOM:
+    document.getElementById(): Trả về phần tử HTML có id được chỉ định.
+    document.querySelector(): Trả về phần tử đầu tiên phù hợp với một bộ chọn CSS được chỉ định.
+
+6. Hàm xử lý sự kiện:
+    addEventListener(): Thêm một bộ xử lý sự kiện vào một phần tử.
+    removeEventListener(): Loại bỏ một bộ xử lý sự kiện khỏi một phần tử.
